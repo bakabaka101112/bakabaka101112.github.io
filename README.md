@@ -15,6 +15,8 @@ pnpm dev
 pnpm build
 ```
 
+The build produces `dist` for GitHub Actions deployment and also syncs the compiled `index.html` and `assets` folder to the repository root. That keeps the site working even if GitHub Pages is still configured as **Deploy from a branch > main / root**.
+
 ## Publish to GitHub Pages
 
 This repository includes a GitHub Actions workflow at `.github/workflows/deploy.yml`.
