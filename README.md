@@ -21,7 +21,7 @@ This repository includes a GitHub Actions workflow at `.github/workflows/deploy.
 
 1. Push to the `main` branch.
 2. In GitHub, open **Settings > Pages**.
-3. Set **Build and deployment** to **GitHub Actions**.
+3. Set **Build and deployment > Source** to **GitHub Actions**. If it is set to **Deploy from a branch**, GitHub Pages will serve the Vite source `index.html` and the browser will reject `/src/main.jsx`.
 4. The workflow builds the Vite app and publishes `dist`.
 
 For a custom LinkedIn button, set `linkedinUrl` in `src/App.jsx`.
